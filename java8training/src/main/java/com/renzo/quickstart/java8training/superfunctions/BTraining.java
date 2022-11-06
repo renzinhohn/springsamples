@@ -1,0 +1,74 @@
+package com.renzo.quickstart.java8training.superfunctions;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.renzo.quickstart.java8training.superfunctions.classes.OnlyEven;
+import com.renzo.quickstart.java8training.superfunctions.classes.RandomNumbers;
+
+public class BTraining {
+	
+	private final static Integer NUMBER_TWO=2;
+	
+	public static void main(String[] args) {
+		new BTraining();
+	}
+	
+	public BTraining() {
+		// What we want to do
+		// 1 Build number list
+		List<Integer> numbers = SuperFunctions.buildingNumberList(10, new RandomNumbers());
+		System.out.println(numbers);
+		// 2 Filter number list and get even numbers
+		List<Integer> evenNumbers = SuperFunctions.filteringNumberList(numbers, new OnlyEven());
+		System.out.println(evenNumbers);
+		// 3 Square each value of the even number list
+		List<Integer> squareNumbers = squaringNumbers(evenNumbers);
+		System.out.println(squareNumbers);
+		// 4 Show new numbers
+		List<Integer> newNumbers = showingNewNumbers(squareNumbers);
+		// 5 Get the sum of all new numbers
+		int total = summingNumbers(newNumbers);
+		System.out.println(total);
+		
+	}
+
+	private List<Integer> buildingFibonacciNumbers() {
+		return List.of(0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144);
+	}
+	
+	private List<Integer> filteringEvenNumbers(List<Integer> numbers) {
+		List<Integer> result = new ArrayList<>();
+		
+		for (Integer number : numbers) {
+			if (number%2 == 0)
+				result.add(number);
+		}
+		return result;
+	}
+	
+	private List<Integer> squaringNumbers(List<Integer> evenNumbers) {
+		List<Integer> result = new ArrayList<>();
+		
+		for (Integer number : evenNumbers) {
+			result.add( (int)Math.pow( (double)number, (double)NUMBER_TWO) );
+		}
+		return result;
+	}
+	
+	private List<Integer> showingNewNumbers(List<Integer> squareNumbers) {
+		
+		for (Integer number : squareNumbers) {
+			System.out.println(number);
+		}
+		return squareNumbers;
+	}
+	
+	private int summingNumbers(List<Integer> newNumbers) {
+		int result=0;
+		for (Integer number : newNumbers) {
+			result=result+number;
+		}
+		return result;
+	}
+}

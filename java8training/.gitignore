@@ -1,9 +1,13 @@
+####################### java ##########################
+
 # Java related
 target/**
 *.jar
 *.war
 *.ear
 *.class
+
+####################### eclipse #######################
 
 # eclipse specific
 *.pydevproject
@@ -26,3 +30,4 @@ local.properties
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+/target/
