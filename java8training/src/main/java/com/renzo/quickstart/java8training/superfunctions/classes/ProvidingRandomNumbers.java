@@ -4,7 +4,7 @@ import java.util.Random;
 
 import com.renzo.quickstart.java8training.superfunctions.interfaces.Provider;
 
-public class RandomNumbers implements Provider {
+public class ProvidingRandomNumbers implements Provider {
 
 	Random random = new Random();
 	
