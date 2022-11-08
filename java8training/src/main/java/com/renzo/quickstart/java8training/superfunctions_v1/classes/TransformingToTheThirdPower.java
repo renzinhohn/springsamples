@@ -1,6 +1,6 @@
-package com.renzo.quickstart.java8training.superfunctions.classes;
+package com.renzo.quickstart.java8training.superfunctions_v1.classes;
 
-import com.renzo.quickstart.java8training.superfunctions.interfaces.Function;
+import com.renzo.quickstart.java8training.superfunctions_v1.interfaces.Function;
 
 public class TransformingToTheThirdPower implements Function{
 

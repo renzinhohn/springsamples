@@ -1,13 +1,13 @@
-package com.renzo.quickstart.java8training.superfunctions;
+package com.renzo.quickstart.java8training.superfunctions_v2;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.renzo.quickstart.java8training.superfunctions.interfaces.Consumer;
-import com.renzo.quickstart.java8training.superfunctions.interfaces.Function;
-import com.renzo.quickstart.java8training.superfunctions.interfaces.FunctionBinary;
-import com.renzo.quickstart.java8training.superfunctions.interfaces.Predicate;
-import com.renzo.quickstart.java8training.superfunctions.interfaces.Provider;
+import com.renzo.quickstart.java8training.superfunctions_v2.interfaces.Consumer;
+import com.renzo.quickstart.java8training.superfunctions_v2.interfaces.Function;
+import com.renzo.quickstart.java8training.superfunctions_v2.interfaces.FunctionBinary;
+import com.renzo.quickstart.java8training.superfunctions_v2.interfaces.Predicate;
+import com.renzo.quickstart.java8training.superfunctions_v2.interfaces.Provider;
 
 public class SuperFunctions {
 	

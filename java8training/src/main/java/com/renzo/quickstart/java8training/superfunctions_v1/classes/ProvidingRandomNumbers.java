@@ -1,8 +1,8 @@
-package com.renzo.quickstart.java8training.superfunctions.classes;
+package com.renzo.quickstart.java8training.superfunctions_v1.classes;
 
 import java.util.Random;
 
-import com.renzo.quickstart.java8training.superfunctions.interfaces.Provider;
+import com.renzo.quickstart.java8training.superfunctions_v1.interfaces.Provider;
 
 public class ProvidingRandomNumbers implements Provider {
 

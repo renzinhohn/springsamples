@@ -1,6 +1,6 @@
-package com.renzo.quickstart.java8training.superfunctions.classes;
+package com.renzo.quickstart.java8training.superfunctions_v1.classes;
 
-import com.renzo.quickstart.java8training.superfunctions.interfaces.Provider;
+import com.renzo.quickstart.java8training.superfunctions_v1.interfaces.Provider;
 
 public class ProvidingNaturalNumbers implements Provider {
 

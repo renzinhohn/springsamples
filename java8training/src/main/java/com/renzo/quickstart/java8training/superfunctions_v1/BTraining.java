@@ -1,12 +1,12 @@
-package com.renzo.quickstart.java8training.superfunctions;
+package com.renzo.quickstart.java8training.superfunctions_v1;
 
 import java.util.List;
 
-import com.renzo.quickstart.java8training.superfunctions.classes.ConsumingPrinting;
-import com.renzo.quickstart.java8training.superfunctions.classes.FilteringOnlyEven;
-import com.renzo.quickstart.java8training.superfunctions.classes.ProvidingNaturalNumbers;
-import com.renzo.quickstart.java8training.superfunctions.classes.ReducingSummingAll;
-import com.renzo.quickstart.java8training.superfunctions.classes.TransformingToTheThirdPower;
+import com.renzo.quickstart.java8training.superfunctions_v1.classes.ConsumingPrinting;
+import com.renzo.quickstart.java8training.superfunctions_v1.classes.FilteringOnlyEven;
+import com.renzo.quickstart.java8training.superfunctions_v1.classes.ProvidingNaturalNumbers;
+import com.renzo.quickstart.java8training.superfunctions_v1.classes.ReducingSummingAll;
+import com.renzo.quickstart.java8training.superfunctions_v1.classes.TransformingToTheThirdPower;
 
 public class BTraining {
 	
