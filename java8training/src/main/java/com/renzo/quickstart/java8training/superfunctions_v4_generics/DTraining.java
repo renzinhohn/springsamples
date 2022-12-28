@@ -27,8 +27,7 @@ public class DTraining {
 				return random.nextInt(0, 9);
 			}
 		});
-		System.out.println(numbers);
-		
+		System.out.println("1 numbers:\n"+numbers);	
 		// 2 Filter number list and get even numbers
 		List<Integer> evenNumbers = SuperFunctions.filtering(numbers, new Predicate<Integer>() {
 			
@@ -37,17 +36,59 @@ public class DTraining {
 				return value%2==0;
 			}
 		});
-		System.out.println(evenNumbers);
+		System.out.println("2 evenNumbers:\n"+evenNumbers);		
 		
-		// 3 Square each value of the even number list
-//		List<Integer> transformedNumbers = SuperFunctions.transforming(evenNumbers, new OperatorUnary<Integer>() {
-//
-//			@Override
-//			public Integer aplying(Integer value) {
-//				// TODO Auto-generated method stub
-//				return value*value;
-//			}
-//		});
+		// 3a Square each value of the even number list as Integer
+		List<Integer> transformedNumbers = SuperFunctions.transforming(evenNumbers, new OperatorUnary<Integer>() {
+
+			@Override
+			public Integer aplying(Integer value) {
+				// TODO Auto-generated method stub
+				return value*value;
+			}
+		});
+		System.out.println("3a transformedNumbers:\n"+transformedNumbers);
+		// 3b Square each value of the even number list as String
+		List<String> transformedNumbersToString = SuperFunctions.transforming(evenNumbers, new Function<Integer, String>() {
+			
+			@Override
+			public String aplying(Integer value) {
+				// TODO Auto-generated method stub
+				return "Valor: "+value;
+			}
+		});
+		System.out.println("3b transformedNumbersToString:\n"+transformedNumbersToString);
+		
+		// 4
+		Consumer<Integer> temporalConsumer = new Consumer<Integer>() {
+			
+			@Override
+			public void accepting(Integer value) {
+				System.out.println(value);
+			}
+		};		
+		// 4a Show new numbers in the console and returning List
+		System.out.println("4a return method newNumbers:");
+		List<Integer> newNumbers = SuperFunctions.acting(transformedNumbers, temporalConsumer);
+		// 4a Show new numbers in the console and returning nothing
+		System.out.println("4b void method newNumbers:");
+		SuperFunctions.consuming(transformedNumbers, temporalConsumer);
+		
+		// 5 Get the sum of all new numbers
+		Integer total = SuperFunctions.reducing(newNumbers, 0, new OperatorBinary<Integer>() {
+			
+			@Override
+			public Integer applying(Integer value1, Integer value2) {
+				return value1+value2;
+			}
+		});
+		System.out.println("5 total:\n"+total);
+		
+	}
+	
+}
+
+/*
 		List<Integer> transformedNumbers = SuperFunctions.transforming(evenNumbers, new Function<Integer, Integer>() {
 
 			@Override
@@ -68,30 +109,4 @@ public class DTraining {
 			}
 		});
 		System.out.println(transformedToString);
-		
-		// 4
-		Consumer<Integer> temporalConsumer = new Consumer<Integer>() {
-			
-			@Override
-			public void accepting(Integer value) {
-				System.out.println(value);
-			}
-		};		
-		// 4a Show new numbers in the console and returning List
-		List<Integer> newNumbers = SuperFunctions.acting(transformedNumbers, temporalConsumer);
-		// 4a Show new numbers in the console and returning nothing
-		SuperFunctions.consuming(transformedNumbers, temporalConsumer);
-		
-		// 5 Get the sum of all new numbers
-		Integer total = SuperFunctions.reducing(newNumbers, 0, new OperatorBinary<Integer>() {
-			
-			@Override
-			public Integer applying(Integer value1, Integer value2) {
-				return value1+value2;
-			}
-		});
-		System.out.println(total);
-		
-	}
-	
-}
+*/
