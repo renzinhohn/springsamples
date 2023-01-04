@@ -1,8 +1,8 @@
-package com.renzo.quickstart.java8training.zrenzinho;
+package com.renzo.quickstart.java8training.zsamples00;
 
-import com.renzo.quickstart.java8training.zrenzinho.interfaces.Auto;
-import com.renzo.quickstart.java8training.zrenzinho.interfaces.OperacionBinariaEntera;
-import com.renzo.quickstart.java8training.zrenzinho.interfaces.OperacionUnariaEntera;
+import com.renzo.quickstart.java8training.zsamples00.interfaces.Auto;
+import com.renzo.quickstart.java8training.zsamples00.interfaces.OperacionBinariaEntera;
+import com.renzo.quickstart.java8training.zsamples00.interfaces.OperacionUnariaEntera;
 
 public class Test {
 

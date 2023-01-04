@@ -1,4 +1,4 @@
-package com.renzo.quickstart.java8training.zrenzinho;
+package com.renzo.quickstart.java8training.zsamples00;
 
 public class TaskRunnable implements Runnable {
 

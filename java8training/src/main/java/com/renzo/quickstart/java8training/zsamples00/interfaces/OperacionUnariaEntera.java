@@ -1,4 +1,4 @@
-package com.renzo.quickstart.java8training.zrenzinho.interfaces;
+package com.renzo.quickstart.java8training.zsamples00.interfaces;
 
 @FunctionalInterface
 public interface OperacionUnariaEntera {
