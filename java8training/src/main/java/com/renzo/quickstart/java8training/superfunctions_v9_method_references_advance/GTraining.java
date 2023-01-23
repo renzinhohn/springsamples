@@ -1,6 +1,5 @@
 package com.renzo.quickstart.java8training.superfunctions_v9_method_references_advance;
 
-import java.util.Comparator;
 import java.util.Random;
 
 public class GTraining {
@@ -35,7 +34,6 @@ public class GTraining {
 		return random.nextInt(10);
 	}
 	
-
 	public static void main(String[] args) {
 		new GTraining();
 	}
